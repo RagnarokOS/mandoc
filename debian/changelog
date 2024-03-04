@@ -1,0 +1,7 @@
+mandoc (1.14.6-99ragnarok01) unstable; urgency=medium
+
+  * First build of mandoc for Ragnarok.
+  * Taking over full maintance of the package instead of relying
+    on the Debian version.
+
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Sun, 03 Mar 2024 14:32:24 -0500
