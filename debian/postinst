@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+# Use update-alternatives to set proper binary names
+update-alternatives --install /usr/bin/man man /usr/bin/mman 100 \
+	--slave /usr/bin/mdoc mdoc /usr/bin/mandoc_mdoc	\
+	--slave /usr/bin/roff roff /usr/bin/mandoc_roff \
+	--slave /usr/bin/eqn eqn /usr/bin/mandoc_eqn \
+	--slave /usr/bin/tbl tbl /usr/bin/mandoc_tbl \
+	--slave /usr/bin/apropos apropos /usr/bin/mapropos \
+	--slave /usr/bin/soelim soelim /usr/bin/msoelim \
+	--slave /usr/bin/whatis whatis /usr/bin/mwhatis \
+	--slave /usr/bin/catman catman /usr/bin/mcatman
