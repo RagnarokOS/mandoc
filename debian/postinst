@@ -2,9 +2,9 @@
 
 set -e
 
-# Use update-alternatives to set proper binary names
-update-alternatives --install /usr/bin/man man /usr/bin/mman 100 \
-	--slave /usr/bin/apropos apropos /usr/bin/mapropos \
-	--slave /usr/bin/soelim soelim /usr/bin/msoelim \
-	--slave /usr/bin/whatis whatis /usr/bin/mwhatis \
-	--slave /usr/sbin/catman catman /usr/sbin/mcatman
+# Symlinks. Note: tried to use update-alternatives, didn't work.
+ln -sf /usr/bin/man /usr/bin/mman
+ln -sf /usr/bin/apropos /usr/bin/mapropos
+ln -sf /usr/bin/whatis /usr/bin/mwhatis
+ln -sf /usr/bin/soelim /usr/bin/msoelim
+ln -sf /usr/sbin/catman /usr/sbin/mcatman
