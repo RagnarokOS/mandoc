@@ -12,8 +12,8 @@ Package: mandoc
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Provides: man, man-browser
-Conflicts: man, man-db
-Replaces: man, man-db
+Conflicts: man
+Replaces: man
 Description: BSD manpage compiler toolset
  mandoc is a suite of tools compiling mdoc, the roff macro language of choice
  for BSD manual pages, and man, the predominant historical language for UNIX
