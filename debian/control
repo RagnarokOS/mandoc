@@ -2,11 +2,12 @@ Source: mandoc
 Section: doc
 Priority: optional
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Build-Depends: debhelper (>= 11), zlib1g-dev
-Standards-Version: 4.1.4
+Build-Depends: debhelper-compat (= 13), dpkg-build-api, zlib1g-dev
+Standards-Version: 4.7.0
 Homepage: http://mdocml.bsd.lv/
 Vcs-Git: https://github.com/RagnarokOS/mandoc.git
 Vcs-Browser: https://github.com/RagnarokOS/mandoc
+X-Style: black
 
 Package: mandoc
 Architecture: any
@@ -23,3 +24,20 @@ Description: BSD manpage compiler toolset
  wide-character locales), XHTML, HTML, PostScript, and PDF.
  .
  This is the default man implementation in Ragnarok.
+
+Package: libmandoc-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+Description: BSD manpage compiler toolset - library
+ mandoc is a suite of tools compiling mdoc, the roff macro language of choice
+ for BSD manual pages, and man, the predominant historical language for UNIX
+ manuals. It is small, ISO C, ISC-licensed, and quite fast. The main component
+ of the toolset is the mandoc utility program, based on the libmandoc
+ validating compiler, to format output for UNIX terminals (with support for
+ wide-character locales), XHTML, HTML, PostScript, and PDF.
+ .
+ This package contains the libmandoc static library, which can be used to
+ embed mandoc in other programs.
