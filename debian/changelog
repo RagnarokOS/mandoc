@@ -1,3 +1,11 @@
+mandoc (1.14.6-99ragnarok02) unstable; urgency=medium
+
+  * Bump version for Ragnarok -current. Only changes made were
+    in how the package is built. We're already at the latest even
+    in stable.
+
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Tue, 21 Jan 2025 19:07:28 -0500
+
 mandoc (1.14.6-99ragnarok01) unstable; urgency=medium
 
   * First build of mandoc for Ragnarok.
